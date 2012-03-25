@@ -1,3 +1,9 @@
+
+# --- We have moved ---
+
+The main repository is now located under the [machine project](https://github.com/machine/machine.fakes).
+This repository will no longer be actively maintained!
+
 # What is Machine.Fakes ?
 
 Machine.Fakes is little framework build on top of Machine.Specifications that can best be described as an extended integration layer between Machine.Specifications and different Mock/Fake/Substitute/"However you call them now" frameworks. At the moment of writing I prefer the term "Fake". (What a surprise judging from the name of this project ;-))
