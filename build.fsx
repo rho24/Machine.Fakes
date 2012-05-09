@@ -148,7 +148,7 @@ Target "BuildNuGet" (fun _ ->
             Project = projectName
             Version = version
             OutputPath = nugetDir
-            Dependencies = ["Machine.Specifications",RequireExactly MSpecVersion]
+            Dependencies = ["Machine.Specifications", MSpecVersion]
             AccessKey = NugetKey
             Publish = NugetKey <> "" })
         "machine.fakes.nuspec"
@@ -174,8 +174,8 @@ Target "BuildNuGetFlavours" (fun _ ->
                     Version = version
                     OutputPath = nugetDir
                     Dependencies =
-                        ["Machine.Fakes",RequireExactly (NormalizeVersion version)
-                         flavour,RequireExactly flavourVersion]
+                        ["Machine.Fakes", (NormalizeVersion version)
+                         flavour, flavourVersion]
                     AccessKey = NugetKey
                     Publish = NugetKey <> "" })
                 "machine.fakes.nuspec"
